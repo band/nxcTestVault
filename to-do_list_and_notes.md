@@ -23,5 +23,8 @@
 	- determine a name for this package and write description for PyPI  
 	- public announcements?  
 
+2024-06-28:
+ - gh-pages mysteries and actions (whew!)  
+ 
 
  
