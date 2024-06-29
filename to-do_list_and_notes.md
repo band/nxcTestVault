@@ -30,6 +30,11 @@
 2024-06-29 TODO:  
  - nxc: add code to incorporate websiteroot into Sidebar links  
    - testing in nxc 0.1.8
+   - issue: Sidebar.html does not render local links
+     solution: convert local links in all markdown_text (test in ghPagesLab)
+	 
  - backlinks need {{websiteroot}} variable  
-   - maybe already there? need to check  
+   - some funky behavior going on  
+   
+
 
