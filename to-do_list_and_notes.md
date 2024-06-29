@@ -27,4 +27,9 @@
  - gh-pages mysteries and actions (whew!)  
  
 
- 
+2024-06-29 TODO:  
+ - nxc: add code to incorporate websiteroot into Sidebar links  
+   - testing in nxc 0.1.8
+ - backlinks need {{websiteroot}} variable  
+   - maybe already there? need to check  
+
