@@ -35,8 +35,12 @@
      ghPagesLab)
      DONE: this solution included in nxc 0.1.9
 	 
- - backlinks need {{websiteroot}} variable  
-   - some funky behavior going on  
+2024-06-30:  
+ - backlinks need `{websiteroot}}` variable added on `page.html`
+   - seems to be working for netlify and gh-pages
+ - TODO:  
+   - update PyPI code and test that  
+
 
 
 
