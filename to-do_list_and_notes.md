@@ -39,7 +39,9 @@
  - backlinks need `{websiteroot}}` variable added on `page.html`
    - seems to be working for netlify and gh-pages
  - TODO:  
-   - update PyPI code and test that  
+   - update PyPI code and test that  (2024-07-02 1st test DONE)  
+   - test nxcTV on netlify and Github pages  
+
 
 
 
