@@ -42,6 +42,11 @@
    - update PyPI code and test that  (2024-07-02 1st test DONE)  
    - test nxcTV on netlify and Github pages  
 
+2024-07-05:  
+ - used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and will permit some further specialization of individual pages.
+ - the next TODO is to incorporate "Edit this page" function on all pages
+ - immediately followed by restricting "Edit this page" from README and Sidebar  
+
 
 
 
