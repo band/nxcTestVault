@@ -43,12 +43,29 @@
    - test nxcTV on netlify and Github pages  
 
 2024-07-05:  
- - used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and will permit some further specialization of individual pages.
+ - used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and permits some further specialization of individual pages.
  - the next TODO is to incorporate "Edit this page" function on all pages
  - immediately followed by restricting "Edit this page" from README and Sidebar  
 
+2024-07-06:  
+ - incorporated "Edit this page" code (`nxc.py`, `page.html`, `mystyles.css`)
+ - TODO: that code needs to committed to Github repo
+ - `nxc.yaml` contains Github usable `edit_url` (configuration of this for other forges needs to be documented)
+ - use these notes from PK on 18 April 2024:
+```
+edit_url: 'https://codeberg.org/{org}/{repo}/_edit/{branch}/'
 
+edit_url: 'https://github.com/{org}/{repo}/edit/{branch}/'
 
+edit_url: 'https://gitlab.com/{org}/{project-or subgroup}/{repo}/-/edit/{branch}/'
+
+edit_url: 'https://gitea.com/{org}/{repo}/_edit/{branch}/'
+
+# Bitbucket requires suffix
+edit_url_prefix: 'https://bitbucket.org/{org}/{repo}/src/{branch}/'
+edit_url_suffix: '?mode=edit'
+```
+ - TODO: CSS for the "Edit this page" button needs tweaking for Dolce theme
 
 
 
