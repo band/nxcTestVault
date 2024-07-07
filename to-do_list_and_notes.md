@@ -86,6 +86,13 @@ filtered_markdown_files = [file for file in markdown_files if not any(file.start
 	 - exclude "Edit this page" button from README and Sidebar (nxc 0.1.13)
 - TODO: review and organize the `nxc` templates directory
 
-- TEST: does editing this page initiate a netlify rebuild?
-  
+- TEST: does editing this page initiate a netlify rebuild? YES!
+
+ - add Git forge hostname to Edit-this-page tooltip (JA suggestion):  
+```python
+from urllib.parse import urlparse
+forge_host = urlparse(config['edit_url']).hostname
+```
+   - TODO: include in nxc v 0.1.14  
+
 
