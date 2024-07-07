@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/nxcTestVault/lunr-index-1720297724.426377.js"></script>
+    <script src="/nxcTestVault/lunr-index-1720365210.8229694.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/nxcTestVault/lunr-posts-1720297724.426377.js"></script>
+    <script src="/nxcTestVault/lunr-posts-1720365210.8229694.js"></script>
     
   </head>
 <body>
@@ -39,6 +39,15 @@
     </div>
 
     <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/to-do list and notes.md"
+	class="edit-this-page-button">Edit This
+	Page</a>&nbsp;<span class="edit-this-page-tooltip"><strong>&#9432;</strong><span class="edit-this-page-tooltiptext">Clicking 'Edit This Page' opens a new tab or window to edit this page on the Git forge. You need to be signed into the forge to edit. Close the edit page to return to this one.</span></span></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
       <h1>to-do list  and notes</h1>
 <blockquote>
 <p>[!comment] (which shows that almost <a href="https://wiki.openglobalmind.com/ogm_stewardship/project_plans/template_for_project_(how_to_use)">every project needs a plan</a>)</p>
@@ -139,6 +148,18 @@ edit_url_suffix: '?mode=edit'
 <ul>
 <li>TODO: CSS for the "Edit this page" button needs tweaking for Dolce theme</li>
 </ul>
+<p>2024-07-06 exclude specific subdirectories from website build (feature request)</p>
+<pre><code class="language-python">exclude_subdir = "/path/to/your/directory/exclude_subdir"
+filtered_markdown_files = [file for file in markdown_files if not file.startswith(exclude_subdir)]
+</code></pre>
+<p>when <code>exclude_subdirs</code> is a list of directories this code is an option:</p>
+<pre><code class="language-python">filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
+</code></pre>
+<p>2024-07-07:</p>
+<ul>
+<li>"Edit the page" code in the test-pypi package ToBeTested</li>
+<li>TODO: review and organize the <code>nxc</code> templates directory</li>
+</ul>
 
       
       <hr>
@@ -158,7 +179,7 @@ edit_url_suffix: '?mode=edit'
     <div><strong>nxcTestVault</strong> by the unpaid anderbill.</div>
     <div>Central repository at <a href="https://github.com/band/nxcTestVault">nxc test laboratory</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Saturday, July 06, 2024 at 20:28 UTC.</em></div>
+    <div><em>Site last updated on Sunday, July 07, 2024 at 15:13 UTC.</em></div>
   </div>
 </footer>
   <script src="/nxcTestVault/mwb-static/js/script.js"></script>
