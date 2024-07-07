@@ -79,4 +79,6 @@ filtered_markdown_files = [file for file in markdown_files if not any(file.start
 
 2024-07-07:
  - "Edit the page" code in the test-pypi package ToBeTested  
- - TODO: review and organize the `nxc` templates directory  
+	 - exclude "Edit this page" button from README and Sidebar (nxc 0.1.13)
+- TODO: review and organize the `nxc` templates directory  
+
