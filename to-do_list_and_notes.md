@@ -21,7 +21,11 @@
 	- code review  
 	- document  use cases and how-to use  
 	- determine a name for this package and write description for PyPI  
-	- public announcements?  
+	- public announcements:
+		- Plex, OGM
+		- MediaWiki & Wikipedia might have a newsletter or something
+		- WikiSym (name changed, to find)
+ 		- where else? 	
 
 2024-06-28:
  - gh-pages mysteries and actions (whew!)  
