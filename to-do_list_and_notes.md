@@ -93,6 +93,8 @@ filtered_markdown_files = [file for file in markdown_files if not any(file.start
 from urllib.parse import urlparse
 forge_host = urlparse(config['edit_url']).hostname
 ```
-   - TODO: include in nxc v 0.1.14  
+   - TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
+	   (also updated the Edit-this-page tooltip)  
+
 
 
