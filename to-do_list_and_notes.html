@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/nxcTestVault/lunr-index-1720467242.5258539.js"></script>
+    <script src="/nxcTestVault/lunr-index-1720546963.2922394.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/nxcTestVault/lunr-posts-1720467242.5258539.js"></script>
+    <script src="/nxcTestVault/lunr-posts-1720546963.2922394.js"></script>
     
   </head>
 <body>
@@ -171,7 +171,7 @@ filtered_markdown_files = [file for file in markdown_files if not file.startswit
 </ul>
 </li>
 <li>
-<p>TODO: review and organize the <code>nxc</code> templates directory</p>
+<p>WIP: review and organize the <code>nxc</code> templates directory</p>
 </li>
 <li>
 <p>TEST: does editing this page initiate a netlify rebuild? YES!</p>
@@ -186,6 +186,16 @@ forge_host = urlparse(config['edit_url']).hostname
 <ul>
 <li>TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
 (also updated the Edit-this-page tooltip)</li>
+</ul>
+<p>2024-07-09:</p>
+<ul>
+<li>John Abbe mentioned that some of the "nxcTestVault" pages were too wide to read on his laptop, including the "Edit this page" button and tooltip. So, becoming curious about this I discovered that, indeed, some of the webpages did not wrap properly when the browser was narrowed. And then I prompted Claude-3 with this:<br />
+"this webpage stops wrapping at a certain point; how to adjust that: https://nxctestvault.netlify.app/to-do_list_and_notes".
+<ul>
+<li>the response was informative and I followed the suggested <code>css</code> changes. the too-wide behavior problem was fixed, and a few other suggestions have improved that behavior for pages including images and fenced-code blocks. (so, thank you, Claude)</li>
+</ul>
+</li>
+<li>WIP: include these updates in nxc v 0.1.15</li>
 </ul>
 
       
@@ -206,7 +216,7 @@ forge_host = urlparse(config['edit_url']).hostname
     <div><strong>nxcTestVault</strong> by the unpaid anderbill.</div>
     <div>Central repository at <a href="https://github.com/band/nxcTestVault">nxc test laboratory</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Monday, July 08, 2024 at 19:34 UTC.</em></div>
+    <div><em>Site last updated on Tuesday, July 09, 2024 at 17:42 UTC.</em></div>
   </div>
 </footer>
   <script src="/nxcTestVault/mwb-static/js/script.js"></script>
