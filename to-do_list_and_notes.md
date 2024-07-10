@@ -96,12 +96,16 @@ forge_host = urlparse(config['edit_url']).hostname
    - TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
 	   (also updated the Edit-this-page tooltip)  
 
-
 2024-07-09:  
 - John Abbe mentioned that some of the "nxcTestVault" pages were too wide to read on his laptop, including the "Edit this page" button and tooltip. So, becoming curious about this I discovered that, indeed, some of the webpages did not wrap properly when the browser was narrowed. And then I prompted Claude-3 with this:  
 	"this webpage stops wrapping at a certain point; how to adjust that: https://nxctestvault.netlify.app/to-do_list_and_notes".
 	- the response was informative and I followed the suggested `css` changes. the too-wide behavior problem was fixed, and a few other suggestions have improved that behavior for pages including images and fenced-code blocks. (so, thank you, Claude)  
-- WIP: include these updates in nxc v 0.1.15  
+- WIP: include these dolce theme updates in nxc v 0.1.15  
+		(TODO: describe the workflows for keeping the `nxc` template theme up to date with existing `nxc` `pip` installs)  
+
+
+2024-07-10:  
+- DONE: bring nxc up-to-date and republish to test-pypi   
 
 
 
