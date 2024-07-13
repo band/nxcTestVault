@@ -107,5 +107,9 @@ forge_host = urlparse(config['edit_url']).hostname
 2024-07-10:  
 - DONE: bring nxc up-to-date and republish to test-pypi   
 
+2024-07-13:  
+ - TODO: use `nxc` to initialize and existing MassiveWiki site, so as to install `nxc` next to `massivewikibuilder` and see what problems arise and what steps need to be taken.  
+
+
 
 
