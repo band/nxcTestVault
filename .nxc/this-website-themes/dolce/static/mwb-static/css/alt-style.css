@@ -1,14 +1,13 @@
 /* Base Styles */
-html {
-  font-size: 62.5%;
-}
 
 body {
   font-size: 1.5em;
+  font-size: 1.125rem;
   line-height: 1.6;
   font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: "Inter", Arial, sans-serif;
-/*  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: Georgia, Times New Roman, serif;
   color: #333;
   background: #FEFEFE;
 }
@@ -17,6 +16,10 @@ body {
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Inter, Arial, sans-serif;
 }
 
 /* Media */

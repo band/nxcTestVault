@@ -1,0 +1,13 @@
+/*  Edit this file to change the appearance of elements in the side column.
+ ** Note that this file is set up to use CSS nesting, which is supported in modern browsers.
+ ** Consult <https://caniuse.com/css-nesting> for more information on browser support.
+ */
+
+#side-column {
+  /* styles for the side-column */
+  
+  a {
+    font-family: Inter, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+}
