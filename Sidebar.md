@@ -1,10 +1,10 @@
 ### Site Navigation
 
-[[README|Home]]  
+[[README|HOME]]  
 
-[Search](/search.html)  
-[All Pages](/all-pages.html)  
-[Recent Pages](/recent-pages.html)  
+[SEARCH](/search.html)  
+[ALL PAGES](/all-pages.html)  
+[RECENT PAGES](/recent-pages.html)  
 
 ### Selected content
 
