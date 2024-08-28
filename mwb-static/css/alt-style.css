@@ -1,0 +1,158 @@
+/* Base Styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #FEFEFE;
+}
+
+/* Typography */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Media */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+#side-column {
+  font-size: 0.9em;
+  background-color: white;
+  min-width: 12em;
+  max-height: 80vh;
+  padding: 20px;
+  margin-right: 10px;
+  overflow-y: auto;
+  position: relative; /* context for pseudo-element */
+}
+/* pseudo-element to be a vertical bar */
+#side-column::after {
+  content: '';
+  position: absolute;
+  top: 20px; /* Start 20px from the top */
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: black;
+}
+
+#main-column {
+  background-color: white;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Header */
+#header {
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin: 0.5em;
+}
+
+#hamburger-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.floating {
+  position: absolute;
+  left: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.has-text-centered {
+  text-align: center !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #fafafa;
+  padding: 3rem 1.5rem 6rem;
+}
+
+/* Buttons */
+.button {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding: calc(0.5em - 1px) 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.is-light {
+  background-color: whitesmoke;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Edit This Page */
+.edit-this-page-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.edit-this-page-button {
+  display: inline-block;
+  padding: .25em .5em;
+  background-color: #22aa22;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .5em;
+}
+
+.edit-this-page-tooltip .edit-this-page-tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #444444;
+  color: #fff;
+  text-align: center;
+  border-radius: .5em;
+  padding: .5em;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.edit-this-page-tooltip:hover .edit-this-page-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
