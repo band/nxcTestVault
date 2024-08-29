@@ -111,8 +111,10 @@ forge_host = urlparse(config['edit_url']).hostname
  - TODO: use `nxc` to initialize and existing MassiveWiki site, so as to install `nxc` next to `massivewikibuilder` and see what problems arise and what steps need to be taken.  
 
 
-#### 2024-07-18:  
+###### 2024-07-18:  
 - further development notes are being kept on the developer-massive-wiki:  
 	https://developer.massive.wiki/pypi_module_development_notes  
 
+###### 2024-08-29:
+- adding another item to this page for netlify testing ...  
 
