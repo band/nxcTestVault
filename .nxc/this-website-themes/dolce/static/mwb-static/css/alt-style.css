@@ -48,6 +48,8 @@ img, video, iframe {
 }
 
 #main-column {
+  max-width: 35em;
+  margin: 0 auto;
   background-color: white;
   padding: 20px;
   flex-grow: 1;
