@@ -48,11 +48,11 @@ img, video, iframe {
 }
 
 #main-column {
-  max-width: 35em;
-  margin: 0 auto;
+  max-width: 41em;
   background-color: white;
   padding: 20px;
   flex-grow: 1;
+  margin-left: 2em;
 }
 
 /* Header */
