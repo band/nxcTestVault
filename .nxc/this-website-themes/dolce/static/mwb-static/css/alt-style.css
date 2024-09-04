@@ -1,12 +1,9 @@
 /* Base Styles */
 
 body {
-  font-size: 1.5em;
   font-size: 1.125rem;
   line-height: 1.6;
   font-weight: 400;
-  font-Family: "Inter", Arial, sans-serif;
-  font-family: "Trebuchet MS", Arial, sans-serif;
   font-family: Georgia, Times New Roman, serif;
   color: #333;
   background: #FEFEFE;
@@ -47,6 +44,34 @@ img, video, iframe {
   border-right: 1px solid #454545;
 }
 
+#side-column .navlinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#side-column .navlinks li {
+  margin-bottom: .7em;
+}
+
+#side-column .navlinks a {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: .07rem;
+  display: inline-block;
+  padding: .2em 1em;
+  background-color: #d6eaf8;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#side-column .navlinks a:hover {
+  background-color: #e4f4fc;
+  color: #484848;
+}
+
 #main-column {
   max-width: 41em;
   background-color: white;
@@ -57,13 +82,12 @@ img, video, iframe {
 
 /* Header */
 #header {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.5rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 2.25rem;
   margin: 0.5em 0 1em;
   color: black;
-  background: #b7cce5;
-  border-bottom: 3px solid lightgrey;
-  border-bottom: 2px solid black;
+  background: #d6eaf8;
+  border-bottom: 2px solid #3850c0;
   padding-bottom: 10px;
 }
 
@@ -117,10 +141,11 @@ img, video, iframe {
 
 /* Edit This Page */
 .edit-this-page-button {
+  font-family: "Trebuchet MS", Arial, sans-serif;
   display: inline-block;
   padding: .25em .5em;
-  background-color: #989fa8;
-  color: white;
+  background-color: #d6eaf8;
+  color: #333;
   text-align: center;
   text-decoration: none;
   border-radius: .5em;
