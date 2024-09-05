@@ -63,6 +63,7 @@ img, video, iframe {
   background-color: #d6eaf8;
   color: #333;
   text-decoration: none;
+  border: 1px #c0d4e4;
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
@@ -87,7 +88,7 @@ img, video, iframe {
   margin: 0.5em 0 1em;
   color: black;
   background: #d6eaf8;
-  border-bottom: 2px solid #3850c0;
+  border-bottom: 2px solid #4058c0;
   padding-bottom: 10px;
 }
 
@@ -145,10 +146,17 @@ img, video, iframe {
   display: inline-block;
   padding: .25em .5em;
   background-color: #d6eaf8;
+  border: 1px #c0d4e4;
   color: #333;
   text-align: center;
   text-decoration: none;
   border-radius: .5em;
+  transition: background-color 0.3s ease;
+}
+
+.edit-this-page-button a:hover {
+  background-color: #e4f4fc;
+  color: #484848;
 }
 
 /* Media Queries */
