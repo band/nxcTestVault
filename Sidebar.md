@@ -3,10 +3,10 @@
 <!-- begin "navlinks" HTML/CSS section -->
 <div class="navlinks">
   <ul>
-    <li><a href="https://nxctestvault.netlify.app/readme">Home</a></li>
-    <li><a href="https://nxctestvault.netlify.app/search">Search</a></li>
-    <li><a href="https://nxctestvault.netlify.app/all-pages">All Pages</a></li>
-    <li><a href="https://nxctestvault.netlify.app/recent-pages">Recent Pages</a></li>
+    <li><a href="/readme.html">Home</a></li>
+    <li><a href="/search.html">Search</a></li>
+    <li><a href="/all-pages.html">All Pages</a></li>
+    <li><a href="/recent-pages.html">Recent Pages</a></li>
   </ul>
 </div>
 <!-- end "navlinks" HTML/CSS section -->
