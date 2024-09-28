@@ -118,3 +118,7 @@ forge_host = urlparse(config['edit_url']).hostname
 ###### 2024-08-29:
 - adding another item to this page for netlify testing ...  
 
+2024-09-28:  
+- testing the recent-pages listing
+	- ASSERT: this page is at the top on 28 Sept 2024
+
