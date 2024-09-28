@@ -5,4 +5,4 @@ Linking to this page: [[T.I. a test page]]
 
 Linking to this other page: [[on U.S. foreign policy and China]]  
 
-2024-09-23: test an [[incipient link]] page  
+2024-09-23: test an [[incipient link]]   
