@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024-09-28 testing listing - nxcTestVault</title>
+    <title>RawHtml block tests - nxcTestVault</title>
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/alt-style.css">
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
     
@@ -48,15 +48,48 @@
       
       <div> <!-- edit this page button -->
 	<p style="float:right; margin:.5em .5em
-	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/2024-09-28 testing listing.md"
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/RawHtml block tests.md"
 	class="edit-this-page-button">Edit on GitHub</a></p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>2024-09-28</h1>
+      <h1>RawHtml block tests</h1>
+<p>This page contains a couple of example uses of a Mistletoe Markdown rendering extension that supports embedding block-level HTML elements into a Markdown note.</p>
 <ul>
-<li>this is a test to see if the recent-pages are really recent pages<br />
-ASSERT: on 2024-09-28:18:14 UTC this page is the top recent page</li>
+<li>
+<p>Preliminary description of this extension is found <a href="https://github.com/Massive-Wiki/nxcLab/blob/main/rawhtml.md">here</a></p>
+</li>
+<li>
+<p>TODO: test this with current non-extended Mistletoe</p>
+</li>
+<li>
+<p>TODO: test this with a local, patched, MassiveWikiBuilder</p>
+</li>
+<li>
+<p>Example 1:<br />
+{&lt; div class="example" id="test" &gt;}
+Line 1 inside a div<br />
+Line 2 inside the div<br />
+Line 3 inside the div<br />
+{&lt; /div &gt;}</p>
+</li>
+<li>
+<p>Example 2 (test links and lists):<br />
+{&lt; div class="navlink" &gt;}</p>
+</li>
+<li>
+<p><a href="/nxcTestVault/README.html">Home</a></p>
+</li>
+<li>
+<p><a class="wikilink" href="/nxcTestVault/MaryRuefle-Nettles.html">MaryRuefle-Nettles</a><br />
+{&lt; /div &gt;}</p>
+</li>
+<li>
+<p>Example 3 (an inline span test):</p>
+</li>
+<li>
+<p>This text, is <span style="color:red;"><em>special</em></span>, and is rendered just fine!</p>
+</li>
 </ul>
 
       
