@@ -2,7 +2,10 @@
 
 	this page is being used to further test if `netlify` builds can stay synchronized with the latest commits to the GitHub repository.  
 
-wait: put some fun text on this page:  
+**try again**: pushing this page again to see if `netlify` syncs with git latest commit state  
+- RESULT:  
+
+put some fun text on this page:  
 
 @bethsawin@spore.social](https://hachyderm.io/@bethsawin@spore.social "bethsawin@spore.social")
 
