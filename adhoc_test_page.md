@@ -12,8 +12,11 @@ Test: push this adhoc page, which is not in the index
 ASSERT: the git log try for this file will yield an error message  
 RESULT: the ASSERT is correct  
 
-Test: add remove cache directory after build and then push another new page  
-ASSERT: cache will be clear and new page will show up as the latest Recent-Pages and All-Pages entry  
+Test: add remove cache directory after build:  
+	DONE: this page still returns an empty git log message  
+Next test: add new text to this page and then commit and push it  
+ASSERT: cache will be clear and this page will show up as the latest Recent-Pages and All-Pages entry  
+
 
 
 
