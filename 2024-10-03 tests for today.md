@@ -8,4 +8,6 @@
 2. push this page and this [[2024-10-03 test number 2]]  
 	- RESULT: ha, ha, no notes from this test are recorded
 	- so, try again on 2024-10-04  
-		- RESULT:
+		- RESULT: well, the index was out of sync; forcing clear cache and deploy fixed that problem.
+		- next is to see what happens with this one page update
+			- RESULT: 
