@@ -10,4 +10,6 @@
 	- so, try again on 2024-10-04  
 		- RESULT: well, the index was out of sync; forcing clear cache and deploy fixed that problem.
 		- next is to see what happens with this one page update
-			- RESULT: 
+			- RESULT: updating this one page seems to build without error and All-Pages and Recent-Pages seem to be accurate
+			- what test next? create a new [[adhoc test page]]  and see what happens when that is committed. RESULT:  git index out of sync
+			- what happens when this single page is pushed?  
