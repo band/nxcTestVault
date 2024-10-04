@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/nxcTestVault/lunr-index-1728064675.3550704.js"></script>
+    <script src="/nxcTestVault/lunr-index-1728068486.4025233.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/nxcTestVault/lunr-posts-1728064675.3550704.js"></script>
+    <script src="/nxcTestVault/lunr-posts-1728068486.4025233.js"></script>
     
   </head>
 <body>
@@ -56,7 +56,12 @@
       <h1>adhoc test page</h1>
 <p><strong>Netlify build test page</strong>
 ASSERT: once committed and pushed to the repo this page will be at the top of the Recent-Pages and All-Pages pages.
-RESULT:</p>
+RESULT: git log for page is empty
+WhatIsHappening (WIH): git index in the cache does not have this file</p>
+<p>Test: push a page that does exist; does the log return the latest commit info?
+RESULT: no, it returns the previous commit info</p>
+<p>Test: push this adhoc page, which is not in the index
+ASSERT: the git log try for this file will yield an error message</p>
 
       
       <hr>
@@ -76,7 +81,7 @@ RESULT:</p>
     <div><strong>nxcTestVault</strong> by the unpaid anderbill.</div>
     <div>Central repository at <a href="https://github.com/band/nxcTestVault">nxc test laboratory</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Friday, October 04, 2024 at 17:57 UTC.</em></div>
+    <div><em>Site last updated on Friday, October 04, 2024 at 19:01 UTC.</em></div>
   </div>
 </footer>
   <script src="/nxcTestVault/mwb-static/js/script.js"></script>
