@@ -2,7 +2,7 @@
   ignore = "/bin/false"
   base = ".nxc"
   publish = "./output"
-  command = "nxc build -i .. -o ./output --lunr --commits && ls -l $NETLIFY_BUILD_BASE/repo"
+  command = "nxc build -i .. -o ./output --lunr --commits && ls -l $NETLIFY_BUILD_BASE/env_store"
 
 [build.environment]
   PYTHON_VERSION = "3.8"
