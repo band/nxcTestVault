@@ -6,4 +6,6 @@
 		 - it seems that the latest commits are not registered in the `git` records used by the build
 		 - Re-deploying and forcing the cache to be cleared does sync things up
 2. push this page and this [[2024-10-03 test number 2]]  
-	- RESULT: 
+	- RESULT: ha, ha, no notes from this test are recorded
+	- so, try again on 2024-10-04  
+		- RESULT:
