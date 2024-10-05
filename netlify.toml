@@ -2,8 +2,7 @@
   ignore = "/bin/false"
   base = ".nxc"
   publish = "./output"
-  command = "nxc build -i .. -o ./output --lunr --commits"
+  command = "nxc build -i .. -o ./output --lunr --commits && rm -fr $NETLIFY_BUILD_BASE/cache"
 
 [build.environment]
   PYTHON_VERSION = "3.8"
-  GIT_DEPTH = "0"
