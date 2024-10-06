@@ -15,7 +15,14 @@ RESULT: the ASSERT is correct
 Test: add remove cache directory after build:  
 	DONE: this page still returns an empty git log message  
 Next test: add new text to this page and then commit and push it  
-ASSERT: cache will be clear and this page will show up as the latest Recent-Pages and All-Pages entry  
+ASSERT: cache will be clear and this page will show up as the latest
+Recent-Pages and All-Pages entry  
+RESULT: cache is not cleared, so, now what?  
+
+2024-10-06:  
+Test: make sure log error repeats  
+
+
 
 
 
