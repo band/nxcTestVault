@@ -77,7 +77,7 @@ img, video, iframe {
 }
 
 #main-column {
-  max-width: 41em;
+  max-width: 43em;
   background-color: white;
   padding: 20px;
   flex-grow: 1;
