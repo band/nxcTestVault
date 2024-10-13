@@ -3,7 +3,7 @@
 <!-- begin "navlinks" HTML/CSS section -->
 <div class="navlinks">
   <ul>
-    <li><a href="{{websiteroot}}/readme.html">HOME</a></li>
+    <li><a href="/readme.html">HOME</a></li>
     <li><a href="/search.html">Search</a></li>
     <li><a href="/all-pages.html">All Pages</a></li>
     <li><a href="/recent-pages.html">Recent Pages</a></li>
