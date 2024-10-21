@@ -9,7 +9,7 @@
 {< /div >}
 
 {< div class="navlinks" >}
-  <a onclick="location.href=lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link">
+  <a onclick="location.href=randomPostLink()">
     RANDOM PAGE
   </a>
 {< /div >}
