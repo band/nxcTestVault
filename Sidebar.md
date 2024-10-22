@@ -9,9 +9,9 @@
 {< /div >}
 
 {< div class="navlinks" >}
-  <a onclick="location.href=`${randomPostLink()}`">
+  <button onclick="location.href=`${randomPostLink()}`">
     RANDOM PAGE
-  </a>
+  </button>
 {< /div >}
 
 ### Selected content
