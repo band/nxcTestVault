@@ -9,7 +9,7 @@
 {< /div >}
 
 {< div class="navlinks" >}
-  <button onclick="location.href=`${randomPostLink()}`">
+  <button onclick="location.href=`${randomPageLink()}`">
     RANDOM PAGE
   </button>
 {< /div >}
