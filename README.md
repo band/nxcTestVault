@@ -9,13 +9,8 @@ from now).
 
 -----
 
- Climate warming update from the Scripps Mauna Loa Observatory:
+![[portAransas-201206.jpg]]    
+Port Aransas, Texas, June 2012  
 
-![Image file not available](https://scripps.ucsd.edu/bluemoon/co2_400/daily_value.png)  
-
------
-
-![[rodantheNC-200901191504.jpg]]  
-  Rodanthe, North Carolina, USA,  2009-01-19, UTC: 20:04  
 
 
