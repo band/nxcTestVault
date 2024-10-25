@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaryRuefle-Nettles - nxcTestVault</title>
+    <title>RawHtml block tests - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700&display=swap" rel="stylesheet">
@@ -57,29 +57,50 @@
       
       <div> <!-- edit this page button -->
 	<p style="float:right; margin:.5em .5em
-	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/MaryRuefle-Nettles.md"
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/test_pages/RawHtml block tests.md"
 	class="edit-this-page-button">Edit on GitHub</a></p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>Mary Ruefle - Nettles</h1>
-<p>page 8:</p>
-<blockquote>
-<p>If everyone were a storyteller, the infrastructure of the village would collapse. With more than one teller--with so many--contention and conflict would ensue. The one true storyteller--who can say which one?--would be compelled to retire to a cave and sit silent for ten years, eating nothing but nettles and drinking the tea that can be made from them. When he (she? they?) came out, the village would be going about its daily business, digging tubers, nursing babies, drying meat, all of which had already been put into a story by everyone else, so that no story would be left to tell, except the story of the one true storyteller, how he had lived in a cave for ten years, nettled by his own silence, and had at last emerged and found no one willing to listen.</p>
-</blockquote>
-<p>from <em>The Book</em> by Mary Ruefle, published by Wave Books in 2023<br />
-link: https://www.wavepoetry.com/products/the-book</p>
+      <h1>RawHtml block tests</h1>
+<p>This page contains a couple of example uses of a Mistletoe Markdown rendering extension that supports embedding block-level HTML elements into a Markdown note.</p>
+<ul>
+<li>
+<p>Preliminary description of this extension is found <a href="https://github.com/Massive-Wiki/nxcLab/blob/main/rawhtml.md">here</a></p>
+</li>
+<li>
+<p>TODO: test this with current non-extended Mistletoe</p>
+</li>
+<li>
+<p>TODO: test this with a local, patched, MassiveWikiBuilder</p>
+</li>
+<li>
+<p>Example 1:<br />
+{&lt; div class="example" id="test" &gt;}
+Line 1 inside a div<br />
+Line 2 inside the div<br />
+Line 3 inside the div<br />
+{&lt; /div &gt;}</p>
+</li>
+<li>
+<p>Example 2 (test links and lists):<br />
+{&lt; div class="navlink" &gt;}</p>
+</li>
+<li>
+<p><a href="/nxcTestVault/README.html">Home</a></p>
+</li>
+<li>
+<p><a class="wikilink" href="/nxcTestVault/MaryRuefle-Nettles.html">MaryRuefle-Nettles</a><br />
+{&lt; /div &gt;}</p>
+</li>
+<li>
+<p>Example 3 (an inline span test):</p>
+</li>
+<li>
+<p>This text, is <span style="color:red;"><em>special</em></span>, and is rendered just fine!</p>
+</li>
+</ul>
 
-      
-      <hr>
-      <div>
-	<h4>Pages that link to this page</h4>
-	<ul>
-	  
-	  <li><a href="/nxcTestVault/test_pages/RawHtml_block_tests.html">RawHtml block tests</a>
-	  
-	</ul>
-      </div>
       
     </div>
   </div>
