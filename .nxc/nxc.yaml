@@ -8,3 +8,4 @@ recent_changes_count: 5
 sidebar: Sidebar.md
 excluded_directories:
   - private_idaho
+  - sekret_subdirectory
