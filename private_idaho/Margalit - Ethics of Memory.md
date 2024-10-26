@@ -2,6 +2,9 @@
 
 APAvar.: Avishai Margalit (2002). The Ethics of Memory. Harvard University Press.  
 
+page 5:  
+> What concerns me, however, is not the healing powers of knowing the truth in the case of the individual but the healing power of knowing the trust in the case of communal memories.  
+
 page 183:  
 > ... my ethics and morality are humanistic, not religious. This means that the sources of their justification lie in humans, and not in any "higher" beings.  
 
