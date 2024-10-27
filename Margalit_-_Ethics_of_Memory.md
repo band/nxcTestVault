@@ -14,6 +14,3 @@ page 183:
 page 184:  
 > We live with insufficient sources to justify our ethics and morality. Our situation is not unlike that of David Hume's followers, who believe that only deduction can sufficiently justify an empirical claim but that all we have is induction.  
 
-
-**NOTE**: if you are reading this page, `nxc` does not support `excluded_directories` (WIP).    
-
