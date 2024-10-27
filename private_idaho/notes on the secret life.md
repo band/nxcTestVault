@@ -4,3 +4,6 @@ This page is inspired by Gabriel García Márquez, the Colombian author of *One 
 
 What, you expected to find secrets here?
 
+
+-----
+**Note**: if you see this page, `nxc` is not hiding `excluded_directories` - (ERROR)  
