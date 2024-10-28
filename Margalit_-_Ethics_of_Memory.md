@@ -3,7 +3,7 @@
 APAvar.: Avishai Margalit (2002). The Ethics of Memory. Harvard University Press.  
 
 page 5:  
-> What concerns me, however, is not the healing powers of knowing the truth in the case of the individual but the healing power of knowing the trust in the case of communal memories.  
+> What concerns me, however, is not the healing powers of knowing the truth in the case of the individual but the healing power of knowing the truth in the case of communal memories.  
 
 page 14:  
 > ... to know is to believe something to be true. Memory, then, is _knowledge from the past_. It is not necessarily knowledge _about the past_.  
