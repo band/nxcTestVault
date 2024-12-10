@@ -29,7 +29,7 @@
 
 2024-06-28:
  - gh-pages mysteries and actions (whew!)  
- - they are still a mystery (but orcmid just puts HTML into the pages dir?)  
+ - (2204-10-29: WLA) they are still a mystery (but orcmid just puts HTML into the pages dir?)  
  
 
 2024-06-29 TODO:  
