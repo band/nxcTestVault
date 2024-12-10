@@ -8,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@o.5.1/dist/bluesky-comments.css">
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
     <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/nxcTestVault/lunr-index-1733838035.1789877.js"></script>
+    <script src="/nxcTestVault/lunr-index-1733872449.8542292.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/nxcTestVault/lunr-posts-1733838035.1789877.js"></script>
+    <script src="/nxcTestVault/lunr-posts-1733872449.8542292.js"></script>
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -71,14 +72,32 @@ ASSERT: on 2024-09-28:18:14 UTC this page is the top recent page</li>
       
     </div>
   </div>
+  <div id="bluesky-comments"></div>
   <footer class="footer">
   <div class="content has-text-centered">
     <div><strong>nxcTestVault</strong> by the unpaid anderbill.</div>
     <div>Central repository at <a href="https://github.com/band/nxcTestVault">nxc test laboratory</a>.</div>
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
-    <div><em>Site last updated on Tuesday, December 10, 2024 at 13:40 UTC.</em></div>
+    <div><em>Site last updated on Tuesday, December 10, 2024 at 23:14 UTC.</em></div>
   </div>
 </footer>
   <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+  <script type="importmap">
+    {
+	"imports": {
+	    "react": "https://esm.sh/react@18",
+	    "react-dom": "https://esm.sh/react-dom@18"
+	}
+    }
+  </script>
+  <script type="module">
+    import BlueskyComments from 'https://unpkg.com/bluesky-comments@0.5.1/dist/bluesky-comments.es.js';
+    document.addEventListener('DOMContentLoaded', function() {
+	const author = 'anderbill.bsky.social';
+	if (author) {
+	    BlueskyComments.init('bluesky-comments', {author});
+	}
+    });
+  </script>
 </body>
 </html>
