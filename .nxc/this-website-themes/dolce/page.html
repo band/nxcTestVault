@@ -37,8 +37,8 @@
       {% endif %}
     </div>
   </div>
+  {% if bluesky_comments_post %}
   <div id="bluesky-comments"></div>
-  {% include '_footer.html' %}
   <script src="{{websiteroot}}/mwb-static/js/script.js"></script>
   <script type="importmap">
     {
@@ -51,11 +51,13 @@
   <script type="module">
     import BlueskyComments from 'https://unpkg.com/bluesky-comments@0.5.1/dist/bluesky-comments.es.js';
     document.addEventListener('DOMContentLoaded', function() {
-	const author = 'anderbill.bsky.social';
-	if (author) {
-	    BlueskyComments.init('bluesky-comments', {author});
+	const uri = '{{bluesky_comments_post}}';
+	if (uri) {
+	    BlueskyComments.init('bluesky-comments', {uri});
 	}
     });
   </script>
+  {% endif %}
+  {% include '_footer.html' %}
 </body>
 </html>
