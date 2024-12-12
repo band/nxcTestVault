@@ -1,3 +1,6 @@
+---
+bluesky_comments_post: https://bsky.app/profile/anderbill.bsky.social/post/3ld2wfagagp2n
+---
 # Margalit - Ethics of Memory
 
 APAvar.: Avishai Margalit (2002). The Ethics of Memory. Harvard University Press.  
