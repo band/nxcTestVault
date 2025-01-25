@@ -49,7 +49,7 @@
     margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 ._showMoreButton_1vf6u_54 {
@@ -60,7 +60,7 @@
 }
 
 ._commentContainer_1vf6u_61 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     font-size: 0.875rem;
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     max-width: 36rem;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 ._authorLink_1vf6u_73 {
@@ -115,11 +115,11 @@
 
 ._repliesContainer_1vf6u_115 {
     border-left: 2px solid #525252;
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
 }
 
 ._actionsContainer_1vf6u_120 {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     display: flex;
     width: 100%;
     max-width: 150px;
