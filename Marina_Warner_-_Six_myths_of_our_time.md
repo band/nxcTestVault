@@ -1,3 +1,6 @@
+---
+bluesky_comments_post: https://bsky.app/profile/anderbill.bsky.social/post/3lgxml4mgtc2z
+---
 # Marina Warner - Six myths of our time  
 
 APAvar: Marina Warner (1994). Six Myths of Our Time. Vintage Books.  
