@@ -10,3 +10,4 @@ sidebar: Sidebar.md
 excluded_directories:
   - private_idaho
   - sekret_subdirectory
+  - _ndxfiles
