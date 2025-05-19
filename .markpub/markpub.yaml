@@ -5,7 +5,7 @@ edit_branch: main
 repo: <a href="https://github.com/band/nxcTestVault">nxcTestVault</a>
 license: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution
   4.0 International License</a>
-recent_changes_count: 5
+recent_changes_count: 8
 sidebar: Sidebar.md
 excluded_directories:
   - private_idaho
