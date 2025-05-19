@@ -13,4 +13,4 @@
 - [[Douglass Carmichael - the loss of Christianity]] *(7/17/2024, 1:54:11 PM)*
 - [[MaryRuefle-Nettles]] *(4/30/2024, 4:50:37 PM)*
 
-*This list contains 12 files and was last updated on 5/18/2025, 4:04:40 PM*
+*This list contains 12 files and was last updated on 5/19/2025, 9:20:36 AM*
