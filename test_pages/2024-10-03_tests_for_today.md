@@ -13,3 +13,6 @@
 			- RESULT: updating this one page seems to build without error and All-Pages and Recent-Pages seem to be accurate
 			- what test next? create a new [[adhoc test page]]  and see what happens when that is committed. RESULT:  git index out of sync
 			- what happens when this single page is pushed?  
+
+#### 2025-04-24
+- makin' it modern
