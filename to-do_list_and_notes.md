@@ -1,3 +1,6 @@
+---
+date: 2025-06-07
+---
 # to-do list  and notes
 >[!comment] (which shows that almost [every project needs a plan](https://wiki.openglobalmind.com/ogm_stewardship/project_plans/template_for_project_(how_to_use)))
 
