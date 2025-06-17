@@ -1,4 +1,4 @@
-# bsComment-Edit-test.md
+# bsComment-Edit-test
 
 ### 2025-06-17
 - attempting to create a test file for PK's bsComment-Edit React App  
