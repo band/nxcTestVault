@@ -1,5 +1,7 @@
 # Files in Root
 
+- [[bsComment-Edit-test.md]] *(6/17/2025, 3:51:53 PM)*
+- [[sameName test page]] *(6/14/2025, 5:27:09 PM)*
 - [[to-do list and notes]] *(6/14/2025, 4:50:38 PM)*
 - [[#markdown_finder]] *(6/13/2025, 4:42:58 PM)*
 - [[markdown_finder]] *(6/13/2025, 2:58:57 PM)*
@@ -15,4 +17,4 @@
 - [[Douglass Carmichael - the loss of Christianity]] *(7/17/2024, 1:54:11 PM)*
 - [[MaryRuefle-Nettles]] *(4/30/2024, 4:50:37 PM)*
 
-*This list contains 14 files and was last updated on 6/14/2025, 4:50:41 PM*
+*This list contains 16 files and was last updated on 6/17/2025, 3:51:56 PM*

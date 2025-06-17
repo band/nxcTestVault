@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adhoc test page - nxcTestVault</title>
+    <title>samePageName - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -61,29 +61,16 @@
       
       <div> <!-- edit this page button -->
 	<p style="float:right; margin:.5em .5em
-	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/test_pages/adhoc test page.md"
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/test_pages/subdir/samePageName.md"
 	class="edit-this-page-button">Edit on GitHub</a></p>
 	<br clear="all">
       </div> <!-- edit this page button -->
       
-      <h1>adhoc test page</h1>
-<p><strong>Netlify build test page</strong>
-ASSERT: once committed and pushed to the repo this page will be at the top of the Recent-Pages and All-Pages pages.<br />
-RESULT: git log for page is empty<br />
-WhatIsHappening (WIH): git index in the cache does not have this file</p>
-<p>Test: push a page that does exist; does the log return the latest commit info?<br />
-RESULT: no, it returns the previous commit info</p>
-<p>Test: push this adhoc page, which is not in the index<br />
-ASSERT: the git log try for this file will yield an error message<br />
-RESULT: the ASSERT is correct</p>
-<p>Test: add remove cache directory after build:<br />
-DONE: this page still returns an empty git log message<br />
-Next test: add new text to this page and then commit and push it<br />
-ASSERT: cache will be clear and this page will show up as the latest
-Recent-Pages and All-Pages entry<br />
-RESULT: cache is not cleared, so, now what?</p>
-<p>2024-10-06:<br />
-Test: make sure log error repeats</p>
+      <h1>samePageName</h1>
+<p>2202-09-19: this is the second page created with the name <code>samePageName</code></p>
+<ul>
+<li>this will be put into <code>Link workbench/subdir</code> folder</li>
+</ul>
 
       
       <hr>
@@ -91,7 +78,7 @@ Test: make sure log error repeats</p>
 	<h4>Pages that link to this page</h4>
 	<ul>
 	  
-	  <li><a href="/nxcTestVault/test_pages/2024-10-03_tests_for_today.html">2024-10-03 tests for today</a>
+	  <li><a href="/nxcTestVault/sameName_test_page.html">sameName test page</a>
 	  
 	  <li><a href="/nxcTestVault/test_pages/ndx-test_pages.html">ndx-test_pages</a>
 	  
