@@ -1,18 +1,16 @@
-# Bash Shell Libraries
+# README
 
-This new Bash Shell Libraries collection upgrades the Shell Functions
-e-book \[FIND A LINK\]. To
-support many development needs, here the focus shifts to managing
-separate libraries supporting those various needs.
+This is a laboratory repo for testing Massive Wiki publishing explorations.
 
-At bottom, it recognizes three needs of a Shell developer independent
-of their own application development families.
+It is intended to be an experimental workbench and part-time Obsidian
+vault. We aim, and try, to keep the lab tidy, but it will be messy. Items found
+in the repository now may not be there tomorrow (or even five minutes
+from now).
 
-- backing up functions, libraries, and ancillary files: images,
-  spreadsheets, ...
-- converting function libraries, their collections, into Apps
-- producing a library/function data base, it uses the Unix Relational
-  Data Base
-  
+-----
+
+![[portAransas-201206.jpg]]    
+Port Aransas, Texas, June 2012  
+
 
 

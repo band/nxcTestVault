@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list and notes - nxcTestVault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/style.css">
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.7.0/dist/bluesky-comments.css">
+<!--
+    <link rel="stylesheet" href="/nxcTestVault/mwb-static/css/bluesky-comments.css">
+-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/nxcTestVault/lunr-index-1762213325.2619038.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/nxcTestVault/lunr-posts-1762213325.2619038.js"></script>
+    <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/nxcTestVault/README.html">HOME</a></li>
+<li><a href="/nxcTestVault/search.html">SEARCH</a></li>
+<li><a href="/nxcTestVault/all-pages.html">ALL PAGES</a></li>
+<li><a href="/nxcTestVault/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h3>Selected content</h3>
+<p><a class="wikilink" href="/nxcTestVault/AR_Moxon_-_What_is_a_socialist.html">AR Moxon - What is a socialist</a><br />
+<a class="wikilink" href="/nxcTestVault/MaryRuefle-Nettles.html">MaryRuefle-Nettles</a></p>
+<p><a class="wikilink" href="/nxcTestVault/to-do_list_and_notes.html">to-do list and notes</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/to-do list and notes.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>to-do list  and notes</h1>
+<blockquote>
+<p>[!comment] (which shows that almost <a href="https://wiki.openglobalmind.com/ogm_stewardship/project_plans/template_for_project_(how_to_use)">every project needs a plan</a>)</p>
+</blockquote>
+<ul>
+<li>N.B.: this may turn out to be an ad-hoc list of imagined plans</li>
+</ul>
+<ol>
+<li>primary current experiment is to use this vault to debug using a PyPI module, now named <code>nxc</code> to build a static website, and deploy using <code>netlify</code></li>
+</ol>
+<p>2024-06-18:</p>
+<ul>
+<li>
+<p>some other thoughts (carried over from "ghPagesLab" work):</p>
+<ul>
+<li>one rationale for command-line <code>websiteroot</code> specification is that <code>mwb.yaml</code> can be used for multiple web publication sites without change</li>
+<li>Note: this does mean that PyPI module initialization might need to query for expected deployment method (and where would that info go if not into <code>mwb.yaml</code>?)</li>
+<li>there are questions to be resolved about how to help the user of the system set up, or modify already set up, configurations.</li>
+</ul>
+</li>
+<li>
+<p>today's plan list :</p>
+<ul>
+<li>DONE - set up test vault</li>
+<li>DONE - set up Github repository</li>
+<li>DONE - modify <code>netlify.toml</code> to use test-pypi module <code>nxc</code></li>
+</ul>
+</li>
+<li>
+<p>yet TODO:</p>
+<ul>
+<li>bug: links returned by search do not have a correct path</li>
+<li>further local testing on my own <code>cleanbench</code></li>
+<li>code review</li>
+<li>document  use cases and how-to use</li>
+<li>determine a name for this package and write description for PyPI</li>
+<li>public announcements:
+<ul>
+<li>Plex, OGM</li>
+<li>MediaWiki &amp; Wikipedia might have a newsletter or something</li>
+<li>WikiSym (name changed, to find)</li>
+<li>where else?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>2024-06-28:</p>
+<ul>
+<li>gh-pages mysteries and actions (whew!)</li>
+<li>(2204-10-29: WLA) they are still a mystery (but orcmid just puts HTML into the pages dir?)</li>
+</ul>
+<p>2024-06-29 TODO:</p>
+<ul>
+<li>nxc: add code to incorporate websiteroot into Sidebar links
+<ul>
+<li>testing in nxc 0.1.8</li>
+<li>issue: Sidebar.html does not render local links
+solution: convert local links in all markdown_text (test in
+ghPagesLab)
+DONE: this solution included in nxc 0.1.9</li>
+</ul>
+</li>
+</ul>
+<pre><code>	 
+</code></pre>
+<p>2024-06-30:</p>
+<ul>
+<li>backlinks need <code>{websiteroot}}</code> variable added on <code>page.html</code>
+<ul>
+<li>seems to be working for netlify and gh-pages</li>
+</ul>
+</li>
+<li>TODO:
+<ul>
+<li>update PyPI code and test that  (2024-07-02 1st test DONE)</li>
+<li>test nxcTV on netlify and Github pages</li>
+</ul>
+</li>
+</ul>
+<p>2024-07-05:</p>
+<ul>
+<li>used Claude-3 to refactor the html rendering for page, search, all-pages, recent-pages; the code looks good, and permits some further specialization of individual pages.</li>
+<li>the next TODO is to incorporate "Edit this page" function on all pages</li>
+<li>immediately followed by restricting "Edit this page" from README and Sidebar</li>
+</ul>
+<p>2024-07-06:</p>
+<ul>
+<li>incorporated "Edit this page" code (<code>nxc.py</code>, <code>page.html</code>, <code>mystyles.css</code>)</li>
+<li>TODO: that code needs to committed to Github repo</li>
+<li><code>nxc.yaml</code> contains Github usable <code>edit_url</code> (configuration of this for other forges needs to be documented)</li>
+<li>use these notes from PK on 18 April 2024:</li>
+</ul>
+<pre><code>edit_url: 'https://codeberg.org/{org}/{repo}/_edit/{branch}/'
+
+edit_url: 'https://github.com/{org}/{repo}/edit/{branch}/'
+
+edit_url: 'https://gitlab.com/{org}/{project-or subgroup}/{repo}/-/edit/{branch}/'
+
+edit_url: 'https://gitea.com/{org}/{repo}/_edit/{branch}/'
+
+# Bitbucket requires suffix
+edit_url_prefix: 'https://bitbucket.org/{org}/{repo}/src/{branch}/'
+edit_url_suffix: '?mode=edit'
+</code></pre>
+<ul>
+<li>TODO: CSS for the "Edit this page" button needs tweaking for Dolce theme</li>
+</ul>
+<p>2024-07-06 exclude specific subdirectories from website build (feature request)</p>
+<pre><code class="language-python">exclude_subdir = "/path/to/your/directory/exclude_subdir"
+filtered_markdown_files = [file for file in markdown_files if not file.startswith(exclude_subdir)]
+</code></pre>
+<p>when <code>exclude_subdirs</code> is a list of directories this code is an option:</p>
+<pre><code class="language-python">filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
+</code></pre>
+<p>2024-07-07:</p>
+<ul>
+<li>
+<p>"Edit the page" code in the test-pypi package ToBeTested</p>
+<ul>
+<li>exclude "Edit this page" button from README and Sidebar (nxc 0.1.13)</li>
+</ul>
+</li>
+<li>
+<p>WIP: review and organize the <code>nxc</code> templates directory</p>
+</li>
+<li>
+<p>TEST: does editing this page initiate a netlify rebuild? YES!</p>
+</li>
+<li>
+<p>add Git forge hostname to Edit-this-page tooltip (JA suggestion):</p>
+</li>
+</ul>
+<pre><code class="language-python">from urllib.parse import urlparse
+forge_host = urlparse(config['edit_url']).hostname
+</code></pre>
+<ul>
+<li>TODO: include in nxc v 0.1.14  - DONE (2024-07-08)
+(also updated the Edit-this-page tooltip)</li>
+</ul>
+<p>2024-07-09:</p>
+<ul>
+<li>John Abbe mentioned that some of the "nxcTestVault" pages were too wide to read on his laptop, including the "Edit this page" button and tooltip. So, becoming curious about this I discovered that, indeed, some of the webpages did not wrap properly when the browser was narrowed. And then I prompted Claude-3 with this:<br />
+"this webpage stops wrapping at a certain point; how to adjust that: https://nxctestvault.netlify.app/to-do_list_and_notes".
+<ul>
+<li>the response was informative and I followed the suggested <code>css</code> changes. the too-wide behavior problem was fixed, and a few other suggestions have improved that behavior for pages including images and fenced-code blocks. (so, thank you, Claude)</li>
+</ul>
+</li>
+<li>WIP: include these dolce theme updates in nxc v 0.1.15<br />
+(TODO: describe the workflows for keeping the <code>nxc</code> template theme up to date with existing <code>nxc</code> <code>pip</code> installs)</li>
+</ul>
+<p>2024-07-10:</p>
+<ul>
+<li>DONE: bring nxc up-to-date and republish to test-pypi</li>
+</ul>
+<p>2024-07-13:</p>
+<ul>
+<li>TODO: use <code>nxc</code> to initialize and existing MassiveWiki site, so as to install <code>nxc</code> next to <code>massivewikibuilder</code> and see what problems arise and what steps need to be taken.</li>
+</ul>
+<h6>2024-07-18:</h6>
+<ul>
+<li>further development notes are being kept on the developer-massive-wiki:<br />
+https://developer.massive.wiki/pypi_module_development_notes</li>
+</ul>
+<h6>2024-08-29:</h6>
+<ul>
+<li>adding another item to this page for netlify testing ...</li>
+</ul>
+<p>2024-09-28:</p>
+<ul>
+<li>testing the recent-pages listing
+<ul>
+<li>ASSERT: this page is at the top on 28 Sept 2024</li>
+</ul>
+</li>
+</ul>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/ndx-root.html">ndx-root</a>
+	  
+	</ul>
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    
+    <div><strong>nxcTestVault</strong> by the unpaid anderbill.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/band/nxcTestVault">nxc test laboratory</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
+  </div>
+</footer>
+</body>
+</html>

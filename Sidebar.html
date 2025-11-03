@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - nxcTestVault</title>
+    <title>Sidebar - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,14 +24,10 @@
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-  <style> <!-- TODO: move this to a CSS file -->
-    ul#resList{list-style-position: inside;margin-left:3em;}
-    li.item{list-style:none; padding:5px;}
-    div#renderList{margin-top:1.5em;}
-  </style>
 <body>
   <div id="header">
-    <span id="hamburger-btn" class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html" style="text-decoration: none;">nxcTestVault</a>
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
   </div>
 
   <div class="container" id="flex-container">
@@ -62,73 +58,30 @@
     </div>
 
     <div id="main-column">
-      <div class="content markdown-body">
-	<h1>Search in nxcTestVault</h1>
-        
-	<input type="text" placeholder="type search words" id="inputID">
-	<button type="button" onclick="doSearch();" id="searchButton">Search</button>
-        
-	<div id="renderList"></div>
-      </div>
+      
+      <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/nxcTestVault/README.html">HOME</a></li>
+<li><a href="/nxcTestVault/search.html">SEARCH</a></li>
+<li><a href="/nxcTestVault/all-pages.html">ALL PAGES</a></li>
+<li><a href="/nxcTestVault/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h3>Selected content</h3>
+<p><a class="wikilink" href="/nxcTestVault/AR_Moxon_-_What_is_a_socialist.html">AR Moxon - What is a socialist</a><br />
+<a class="wikilink" href="/nxcTestVault/MaryRuefle-Nettles.html">MaryRuefle-Nettles</a></p>
+<p><a class="wikilink" href="/nxcTestVault/to-do_list_and_notes.html">to-do list and notes</a></p>
+
+      
     </div>
   </div>
-  <script>// ensure the DOM is loaded, for things that need it
-document.addEventListener('DOMContentLoaded', () => {
-
-});</script>
-  <script>
-      const websiteroot = "/nxcTestVault";
-      function doSearch() {
-	let searchString=document.getElementById("inputID").value;
-	var ul = document.createElement('ul');
-	ul.setAttribute('id','resList');
-	const searchResultList = index.search(searchString).map((item) => {
-	  return lunr_posts.find((post) => item.ref === post.link)
-	})
-	render_list = document.getElementById('renderList');
-
-	// clear any previous results, then populate results
-	removeAllChildNodes(render_list);
-	render_list.appendChild(ul);
-	searchResultList.forEach(renderResultList);
-        if (ul.childNodes.length == 0) {
-          render_list.append('No results for "' + searchString + '"')
-	}
-
-	// helper to set a single result (in scope of doSearch())
-	function renderResultList(element, index, arr) {
-	  var anchor = document.createElement('a');
-	  anchor.append(document.createTextNode(`${element.title}`));
-	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
-	  anchor.setAttribute('target', '_blank');
-	  var li = document.createElement('li');
-	  li.setAttribute('class','item');
-	  li.append(anchor);
-	  ul.append(li);
-	}
-      }
-
-      // helper to clear previous search results
-      function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
-	  parent.removeChild(parent.firstChild);
-	}
-      }
-
-      // ensure the DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-	// search on Enter
-	var input_id = document.getElementById('inputID')
-	input_id.focus()
-	input_id.addEventListener('keypress', function(event) {
-	  if (event.key === "Enter") {
-	    event.preventDefault();
-	    document.getElementById("searchButton").click();
-	  }
-	});
-      })
-    </script>
+  
   <footer class="footer">
   <div class="content has-text-centered">
     
@@ -143,6 +96,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
   </div>
 </footer>
-  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
 </body>
 </html>

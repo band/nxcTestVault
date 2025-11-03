@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - nxcTestVault</title>
+    <title>2024-10-03 tests for today - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,14 +24,10 @@
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-  <style> <!-- TODO: move this to a CSS file -->
-    ul#resList{list-style-position: inside;margin-left:3em;}
-    li.item{list-style:none; padding:5px;}
-    div#renderList{margin-top:1.5em;}
-  </style>
 <body>
   <div id="header">
-    <span id="hamburger-btn" class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html" style="text-decoration: none;">nxcTestVault</a>
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
   </div>
 
   <div class="container" id="flex-container">
@@ -62,73 +58,64 @@
     </div>
 
     <div id="main-column">
-      <div class="content markdown-body">
-	<h1>Search in nxcTestVault</h1>
-        
-	<input type="text" placeholder="type search words" id="inputID">
-	<button type="button" onclick="doSearch();" id="searchButton">Search</button>
-        
-	<div id="renderList"></div>
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/test_pages/2024-10-03 tests for today.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>2024-10-03 tests for today</h1>
+<ol>
+<li>push this page and then check if this new page shows up in All-Pages.
+<ul>
+<li>RESULT: pushing this new page triggered a build.
+<ul>
+<li>the build yielded two <code>git log</code> errors;</li>
+<li>it seems that the latest commits are not registered in the <code>git</code> records used by the build</li>
+<li>Re-deploying and forcing the cache to be cleared does sync things up</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>push this page and this <a class="wikilink" href="/nxcTestVault/test_pages/2024-10-03_test_number_2.html">2024-10-03 test number 2</a>
+<ul>
+<li>RESULT: ha, ha, no notes from this test are recorded</li>
+<li>so, try again on 2024-10-04
+<ul>
+<li>RESULT: well, the index was out of sync; forcing clear cache and deploy fixed that problem.</li>
+<li>next is to see what happens with this one page update
+<ul>
+<li>RESULT: updating this one page seems to build without error and All-Pages and Recent-Pages seem to be accurate</li>
+<li>what test next? create a new <a class="wikilink" href="/nxcTestVault/test_pages/adhoc_test_page.html">adhoc test page</a>  and see what happens when that is committed. RESULT:  git index out of sync</li>
+<li>what happens when this single page is pushed?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4>2025-04-24</h4>
+<ul>
+<li>makin' it modern</li>
+</ul>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/test_pages/ndx-test_pages.html">ndx-test_pages</a>
+	  
+	</ul>
       </div>
+      
     </div>
   </div>
-  <script>// ensure the DOM is loaded, for things that need it
-document.addEventListener('DOMContentLoaded', () => {
-
-});</script>
-  <script>
-      const websiteroot = "/nxcTestVault";
-      function doSearch() {
-	let searchString=document.getElementById("inputID").value;
-	var ul = document.createElement('ul');
-	ul.setAttribute('id','resList');
-	const searchResultList = index.search(searchString).map((item) => {
-	  return lunr_posts.find((post) => item.ref === post.link)
-	})
-	render_list = document.getElementById('renderList');
-
-	// clear any previous results, then populate results
-	removeAllChildNodes(render_list);
-	render_list.appendChild(ul);
-	searchResultList.forEach(renderResultList);
-        if (ul.childNodes.length == 0) {
-          render_list.append('No results for "' + searchString + '"')
-	}
-
-	// helper to set a single result (in scope of doSearch())
-	function renderResultList(element, index, arr) {
-	  var anchor = document.createElement('a');
-	  anchor.append(document.createTextNode(`${element.title}`));
-	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
-	  anchor.setAttribute('target', '_blank');
-	  var li = document.createElement('li');
-	  li.setAttribute('class','item');
-	  li.append(anchor);
-	  ul.append(li);
-	}
-      }
-
-      // helper to clear previous search results
-      function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
-	  parent.removeChild(parent.firstChild);
-	}
-      }
-
-      // ensure the DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-	// search on Enter
-	var input_id = document.getElementById('inputID')
-	input_id.focus()
-	input_id.addEventListener('keypress', function(event) {
-	  if (event.key === "Enter") {
-	    event.preventDefault();
-	    document.getElementById("searchButton").click();
-	  }
-	});
-      })
-    </script>
+  
   <footer class="footer">
   <div class="content has-text-centered">
     
@@ -143,6 +130,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
   </div>
 </footer>
-  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
 </body>
 </html>

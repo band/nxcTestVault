@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - nxcTestVault</title>
+    <title>ndx-test_pages - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,14 +24,10 @@
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-  <style> <!-- TODO: move this to a CSS file -->
-    ul#resList{list-style-position: inside;margin-left:3em;}
-    li.item{list-style:none; padding:5px;}
-    div#renderList{margin-top:1.5em;}
-  </style>
 <body>
   <div id="header">
-    <span id="hamburger-btn" class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html" style="text-decoration: none;">nxcTestVault</a>
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
   </div>
 
   <div class="container" id="flex-container">
@@ -62,73 +58,34 @@
     </div>
 
     <div id="main-column">
-      <div class="content markdown-body">
-	<h1>Search in nxcTestVault</h1>
-        
-	<input type="text" placeholder="type search words" id="inputID">
-	<button type="button" onclick="doSearch();" id="searchButton">Search</button>
-        
-	<div id="renderList"></div>
-      </div>
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/test_pages/ndx-test_pages.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Files in test_pages</h1>
+<ul>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/Video_test_-_What_Are_Our_Next_Two_Stacks.html">Video test - What Are Our Next Two Stacks</a> <em>(7/5/2025, 10:42:29 AM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/subdir/samePageName.html">samePageName</a> <em>(6/14/2025, 5:28:32 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/link_and_backlink_test_page.html">link and backlink test page</a> <em>(5/19/2025, 9:17:43 AM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/202505061245.html">202505061245</a> <em>(5/6/2025, 12:47:16 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/202504271330_-testing.html">202504271330 -testing</a> <em>(4/27/2025, 1:32:00 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/2024-10-03_tests_for_today.html">2024-10-03 tests for today</a> <em>(4/24/2025, 1:11:21 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/adhoc_test_page.html">adhoc test page</a> <em>(10/6/2024, 9:47:03 AM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/2024-10-03_test_number_2.html">2024-10-03 test number 2</a> <em>(10/3/2024, 6:18:28 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/RawHtml_block_tests.html">RawHtml block tests</a> <em>(9/30/2024, 11:01:45 AM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/2024-09-28_testing_listing.html">2024-09-28 testing listing</a> <em>(9/28/2024, 1:14:32 PM)</em></li>
+<li><a class="wikilink" href="/nxcTestVault/test_pages/T.I._a_test_page.html">T.I. a test page</a> <em>(7/17/2024, 1:54:11 PM)</em></li>
+</ul>
+<p><em>This list contains 11 files and was last updated on 7/5/2025, 10:42:32 AM</em></p>
+
+      
     </div>
   </div>
-  <script>// ensure the DOM is loaded, for things that need it
-document.addEventListener('DOMContentLoaded', () => {
-
-});</script>
-  <script>
-      const websiteroot = "/nxcTestVault";
-      function doSearch() {
-	let searchString=document.getElementById("inputID").value;
-	var ul = document.createElement('ul');
-	ul.setAttribute('id','resList');
-	const searchResultList = index.search(searchString).map((item) => {
-	  return lunr_posts.find((post) => item.ref === post.link)
-	})
-	render_list = document.getElementById('renderList');
-
-	// clear any previous results, then populate results
-	removeAllChildNodes(render_list);
-	render_list.appendChild(ul);
-	searchResultList.forEach(renderResultList);
-        if (ul.childNodes.length == 0) {
-          render_list.append('No results for "' + searchString + '"')
-	}
-
-	// helper to set a single result (in scope of doSearch())
-	function renderResultList(element, index, arr) {
-	  var anchor = document.createElement('a');
-	  anchor.append(document.createTextNode(`${element.title}`));
-	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
-	  anchor.setAttribute('target', '_blank');
-	  var li = document.createElement('li');
-	  li.setAttribute('class','item');
-	  li.append(anchor);
-	  ul.append(li);
-	}
-      }
-
-      // helper to clear previous search results
-      function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
-	  parent.removeChild(parent.firstChild);
-	}
-      }
-
-      // ensure the DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-	// search on Enter
-	var input_id = document.getElementById('inputID')
-	input_id.focus()
-	input_id.addEventListener('keypress', function(event) {
-	  if (event.key === "Enter") {
-	    event.preventDefault();
-	    document.getElementById("searchButton").click();
-	  }
-	});
-      })
-    </script>
+  
   <footer class="footer">
   <div class="content has-text-centered">
     
@@ -143,6 +100,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
   </div>
 </footer>
-  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
 </body>
 </html>

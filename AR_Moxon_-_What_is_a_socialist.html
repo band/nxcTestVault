@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - nxcTestVault</title>
+    <title>AR Moxon - What is a socialist - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,14 +24,10 @@
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-  <style> <!-- TODO: move this to a CSS file -->
-    ul#resList{list-style-position: inside;margin-left:3em;}
-    li.item{list-style:none; padding:5px;}
-    div#renderList{margin-top:1.5em;}
-  </style>
 <body>
   <div id="header">
-    <span id="hamburger-btn" class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html" style="text-decoration: none;">nxcTestVault</a>
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
   </div>
 
   <div class="container" id="flex-container">
@@ -62,73 +58,38 @@
     </div>
 
     <div id="main-column">
-      <div class="content markdown-body">
-	<h1>Search in nxcTestVault</h1>
-        
-	<input type="text" placeholder="type search words" id="inputID">
-	<button type="button" onclick="doSearch();" id="searchButton">Search</button>
-        
-	<div id="renderList"></div>
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/AR Moxon - What is a socialist.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>A.R. Moxon - What is a socialist?</h1>
+<p>This is an excerpt from an excerpt of an upcoming book:<br />
+APAvar: Moxon, A.R. (2024).  Very Fine People.</p>
+<blockquote>
+<p>A “socialist,” by the way, is somebody who thinks that society exists, and that governments should work for the health and thriving of human beings, and that this means that some things that are conducive to the public good are good in and of themselves even if they don’t create profit for industry, and therefore many such things—like education, or art, or the judicial process, or medical care, or transportation—should be public goods provided by and for the public, administered by representatives chosen by the public, rather than profit centers run specifically and exclusively to turn a profit. They also believe that profit engines should be regulated, to prevent them from making decisions that would maximize profits but also harm human beings. So that’s what a socialist is, and it’s one of the most horrible awful things a person can be, and if you don’t believe me, just go to the real world and ask one of the adults in the room about it.</p>
+</blockquote>
+<p>Link for this excerpt: <a href="https://www.the-reframe.com/what-do-we-do-now/?ref=the-reframe-newsletter">https://www.the-reframe.com/what-do-we-do-now/?ref=the-reframe-newsletter</a></p>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/ndx-root.html">ndx-root</a>
+	  
+	  <li><a href="/nxcTestVault/linking_is_like_thinking.html">linking is like thinking</a>
+	  
+	</ul>
       </div>
+      
     </div>
   </div>
-  <script>// ensure the DOM is loaded, for things that need it
-document.addEventListener('DOMContentLoaded', () => {
-
-});</script>
-  <script>
-      const websiteroot = "/nxcTestVault";
-      function doSearch() {
-	let searchString=document.getElementById("inputID").value;
-	var ul = document.createElement('ul');
-	ul.setAttribute('id','resList');
-	const searchResultList = index.search(searchString).map((item) => {
-	  return lunr_posts.find((post) => item.ref === post.link)
-	})
-	render_list = document.getElementById('renderList');
-
-	// clear any previous results, then populate results
-	removeAllChildNodes(render_list);
-	render_list.appendChild(ul);
-	searchResultList.forEach(renderResultList);
-        if (ul.childNodes.length == 0) {
-          render_list.append('No results for "' + searchString + '"')
-	}
-
-	// helper to set a single result (in scope of doSearch())
-	function renderResultList(element, index, arr) {
-	  var anchor = document.createElement('a');
-	  anchor.append(document.createTextNode(`${element.title}`));
-	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
-	  anchor.setAttribute('target', '_blank');
-	  var li = document.createElement('li');
-	  li.setAttribute('class','item');
-	  li.append(anchor);
-	  ul.append(li);
-	}
-      }
-
-      // helper to clear previous search results
-      function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
-	  parent.removeChild(parent.firstChild);
-	}
-      }
-
-      // ensure the DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-	// search on Enter
-	var input_id = document.getElementById('inputID')
-	input_id.focus()
-	input_id.addEventListener('keypress', function(event) {
-	  if (event.key === "Enter") {
-	    event.preventDefault();
-	    document.getElementById("searchButton").click();
-	  }
-	});
-      })
-    </script>
+  
   <footer class="footer">
   <div class="content has-text-centered">
     
@@ -143,6 +104,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
   </div>
 </footer>
-  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
 </body>
 </html>

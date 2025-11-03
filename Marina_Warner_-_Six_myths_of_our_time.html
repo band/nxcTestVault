@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - nxcTestVault</title>
+    <title>Marina Warner - Six myths of our time - nxcTestVault</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,14 +24,10 @@
     <script> function randomPageLink() { return "/nxcTestVault"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-  <style> <!-- TODO: move this to a CSS file -->
-    ul#resList{list-style-position: inside;margin-left:3em;}
-    li.item{list-style:none; padding:5px;}
-    div#renderList{margin-top:1.5em;}
-  </style>
 <body>
   <div id="header">
-    <span id="hamburger-btn" class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html" style="text-decoration: none;">nxcTestVault</a>
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/nxcTestVault/index.html">nxcTestVault</a>
   </div>
 
   <div class="container" id="flex-container">
@@ -62,73 +58,61 @@
     </div>
 
     <div id="main-column">
-      <div class="content markdown-body">
-	<h1>Search in nxcTestVault</h1>
-        
-	<input type="text" placeholder="type search words" id="inputID">
-	<button type="button" onclick="doSearch();" id="searchButton">Search</button>
-        
-	<div id="renderList"></div>
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/band/nxcTestVault/edit/main/Marina Warner - Six myths of our time.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Marina Warner - Six myths of our time</h1>
+<p>APAvar: Marina Warner (1994). Six Myths of Our Time. Vintage Books.<br />
+Link: <a href="https://search.worldcat.org/en/title/31291493">https://search.worldcat.org/en/title/31291493</a><br />
+OA Link: <a href="https://archive.org/details/managingmonsters0000warn">https://archive.org/details/managingmonsters0000warn</a></p>
+<p>page xxii: (Forward)</p>
+<blockquote>
+<p>... 'If you want to know how much darkness there is around you, you must sharpen your eyes, peering at the faint lights in the distance.'</p>
+</blockquote>
+<p>page 32: (Boys Will Be Boys)</p>
+<blockquote>
+<p>... <em>Blade Runner</em>. The film—and the book—touch a live contemporary nerve when they imagine that the robotic monsters look just like humans, that their nature isn't apparent—neither to us, nor to them.</p>
+</blockquote>
+
+      
+      <hr>
+      <div>
+	<h4>Pages that link to this page</h4>
+	<ul>
+	  
+	  <li><a href="/nxcTestVault/ndx-root.html">ndx-root</a>
+	  
+	</ul>
       </div>
+      
     </div>
   </div>
-  <script>// ensure the DOM is loaded, for things that need it
-document.addEventListener('DOMContentLoaded', () => {
-
-});</script>
-  <script>
-      const websiteroot = "/nxcTestVault";
-      function doSearch() {
-	let searchString=document.getElementById("inputID").value;
-	var ul = document.createElement('ul');
-	ul.setAttribute('id','resList');
-	const searchResultList = index.search(searchString).map((item) => {
-	  return lunr_posts.find((post) => item.ref === post.link)
-	})
-	render_list = document.getElementById('renderList');
-
-	// clear any previous results, then populate results
-	removeAllChildNodes(render_list);
-	render_list.appendChild(ul);
-	searchResultList.forEach(renderResultList);
-        if (ul.childNodes.length == 0) {
-          render_list.append('No results for "' + searchString + '"')
+  
+  <div id="bluesky-comments"></div>
+  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
+  <script type="importmap">
+    {
+	"imports": {
+	    "react": "https://esm.sh/react@18",
+	    "react-dom": "https://esm.sh/react-dom@18"
 	}
-
-	// helper to set a single result (in scope of doSearch())
-	function renderResultList(element, index, arr) {
-	  var anchor = document.createElement('a');
-	  anchor.append(document.createTextNode(`${element.title}`));
-	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
-	  anchor.setAttribute('target', '_blank');
-	  var li = document.createElement('li');
-	  li.setAttribute('class','item');
-	  li.append(anchor);
-	  ul.append(li);
+    }
+  </script>
+  <script type="module">
+    import BlueskyComments from 'https://unpkg.com/bluesky-comments@0.7.0/dist/bluesky-comments.es.js';
+    document.addEventListener('DOMContentLoaded', function() {
+	const uri = 'https://bsky.app/profile/anderbill.bsky.social/post/3lgxml4mgtc2z';
+	if (uri) {
+	    BlueskyComments.init('bluesky-comments', {uri});
 	}
-      }
-
-      // helper to clear previous search results
-      function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
-	  parent.removeChild(parent.firstChild);
-	}
-      }
-
-      // ensure the DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-	// search on Enter
-	var input_id = document.getElementById('inputID')
-	input_id.focus()
-	input_id.addEventListener('keypress', function(event) {
-	  if (event.key === "Enter") {
-	    event.preventDefault();
-	    document.getElementById("searchButton").click();
-	  }
-	});
-      })
-    </script>
+    });
+  </script>
+  
   <footer class="footer">
   <div class="content has-text-centered">
     
@@ -143,6 +127,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <div><em>Site last updated on Monday, November 03, 2025 at 23:42 UTC.</em></div>
   </div>
 </footer>
-  <script src="/nxcTestVault/mwb-static/js/script.js"></script>
 </body>
 </html>
